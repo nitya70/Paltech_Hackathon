@@ -24,3 +24,5 @@ Open index.html using Live Server in VS Code.
 ## MongoDB
 Ensure MongoDB is running locally:
 mongodb://localhost:27017/interview_platform
+
+Thank you for this Opportunity. I won't be selected I know
