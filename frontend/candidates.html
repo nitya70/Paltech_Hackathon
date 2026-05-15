@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Candidates</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <h2>Coordinator</h2>
+
+        <a href="coordinator-dashboard.html">Dashboard</a>
+        <a href="roles.html">Job Roles</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="schedule.html">Schedule Interviews</a>
+        <a href="feedback-review.html">Feedback Reviews</a>
+
+    </aside>
+
+    <main class="content">
+
+        <h1>Candidate Management</h1>
+
+        <div class="form-container">
+
+            <input type="text" id="name" placeholder="Candidate Name">
+
+            <input type="email" id="email" placeholder="Candidate Email">
+
+            <input type="text" id="role" placeholder="Applied Role">
+
+            
+            <select id="pipelineStage">
+    <option>Screening</option>
+    <option>L1 Interview</option>
+    <option>L2 Interview</option>
+    <option>HR Round</option>
+    <option>Selected</option>
+    <option>Rejected</option>
+</select>
+            <button onclick="addCandidate()">Add Candidate</button>
+
+        </div>
+
+        <div class="table-section">
+
+            <h2>Candidate List</h2>
+
+            <table id="candidateTable">
+
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/candidates.js"></script>
+
+</body>
+</html>

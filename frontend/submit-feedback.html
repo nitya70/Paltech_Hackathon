@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <h2>Interviewer</h2>
+
+        <a href="interviewer-dashboard.html">Dashboard</a>
+        <a href="assigned-interviews.html">Assigned Interviews</a>
+        <a href="candidate-profile.html">Candidate Profiles</a>
+        <a href="submit-feedback.html">Submit Feedback</a>
+
+    </aside>
+
+    <main class="content">
+
+        <h1>Feedback Form</h1>
+
+        <div class="form-container">
+
+            <input type="text" id="candidate" placeholder="Candidate Name">
+
+            <label>Communication</label>
+            <input type="number" id="communication" min="1" max="5">
+
+            <label>Technical Skills</label>
+            <input type="number" id="technical" min="1" max="5">
+
+            <label>Problem Solving</label>
+            <input type="number" id="problemSolving" min="1" max="5">
+
+            <label>Recommendation</label>
+
+            <select id="recommendation">
+
+                <option>Strong No</option>
+                <option>No</option>
+                <option>Lean No</option>
+                <option>Lean Yes</option>
+                <option>Yes</option>
+                <option>Strong Yes</option>
+
+            </select>
+
+            <textarea id="comments" placeholder="Comments"></textarea>
+
+            <button onclick="submitFeedback()">Submit Feedback</button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/feedback.js"></script>
+
+</body>
+</html>

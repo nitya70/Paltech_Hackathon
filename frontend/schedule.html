@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schedule Interview</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+
+        <h2>Coordinator</h2>
+
+        <a href="coordinator-dashboard.html">Dashboard</a>
+        <a href="roles.html">Job Roles</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="schedule.html">Schedule Interviews</a>
+
+    </aside>
+
+    <main class="content">
+
+        <h1>Schedule Interview</h1>
+
+        <div class="form-container">
+
+            <input type="text" id="candidate" placeholder="Candidate Name">
+
+            <input type="text" id="interviewer" placeholder="Interviewer Email">
+
+            <input type="text" id="round" placeholder="Round">
+
+            <input type="datetime-local" id="date">
+
+            <button onclick="scheduleInterview()">Schedule</button>
+
+        </div>
+
+        <div class="table-section">
+
+            <h2>All Interview Schedules</h2>
+
+            <table id="interviewTable">
+
+                <tr>
+                    <th>Candidate</th>
+                    <th>InterviewerEmail</th>
+                    <th>Round</th>
+                    <th>Date</th>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/interviews.js"></script>
+
+</body>
+</html>
