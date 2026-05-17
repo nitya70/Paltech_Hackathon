@@ -2,14 +2,16 @@
 
 ## Tech Stack
 - Frontend: HTML, CSS, JavaScript
-- Backend: Spring Boot
+- Backend: Spring Boot Framework
 - Database: MongoDB
 
 ## Features
-- User Registration/Login
+- Cordinator/Interviwer - Registration/Login
 - Company Dashboard
 - Job Role Management
 - Candidate Management
+- Feedback Loop
+- Candiadte Pipleine
 - REST APIs
 
 ## Run Backend
